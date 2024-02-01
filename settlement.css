@@ -1,0 +1,367 @@
+.header{
+    height: 100px;
+    width: 100vw;
+    border: solid transparent;
+    background: #fff;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.kaivigan img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -51px;
+    left: 176px;
+}
+
+.navbar1 ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar1 ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    position: relative;
+    top: 10px;
+    left: 900px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: #654321;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar1 ul li a{
+    text-decoration: none;
+    color: #654321;
+}
+.navbar1 ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fcd600;
+    bottom: -13px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navbar1 ul li a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+body {
+  background-color: #FFECCD;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 240vh;
+}
+
+.settlement{
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(to right, 
+  #eee 0%,
+  #eee 55%,
+  #dfbc43 55%,
+  #dfbc43 100%);
+  position: absolute;
+  top: 100px;
+}
+
+.settlement h3{
+  font-family: 'Space Grotesk', sans-serif;
+  color: #dfbc43;
+  font-size: 120px;
+  left: 150px;
+  top: -20px;
+  position: absolute;    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .settlement{
+    height: 70px;
+  }
+
+  .settlement h3{
+    font-size: 50px;
+    padding-top: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+  .settlement{
+    height: 70px;
+  }
+
+  .settlement h3{
+    font-size: 55px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+  .settlement{
+    height: 70px;
+  }
+
+  .settlement h3{
+    font-size: 75px;
+    padding-top: 12px;
+    padding-left: 10px;
+  }
+  .card-btn{
+    right: 25px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	.settlement{
+	  height: 40px;
+	}
+  
+	.settlement h3{
+	  font-size: 20px;
+	  padding-top: 30px;
+	  left: 30px;
+	}
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 424px) {
+	.settlement{
+	  height: 40px;
+	}
+  
+	.settlement h3{
+	  font-size: 22px;
+	  padding-top: 30px;
+	  left: 10px;
+	}
+  }
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+	.settlement{
+	  height: 30px;
+	}
+  
+	.settlement h3{
+	  font-size: 15px;
+	  padding-top: 28px;
+	  left: 15px;
+	}
+  }
+
+
+
+.grid {
+  display: grid;
+  width: 194em;
+  grid-gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  position: relative;
+  top: 280px;
+}
+
+.grid-item {
+  background-color: #fcf5e5;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(50, 186, 102, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 10px;
+  min-height: 1145px;
+  position: relative;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #654321;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ebcc83;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: 40px;
+  align-items: center;
+  max-width: 345px;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+
+  .grid {
+  display: grid;
+  width: 114em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #b5a8a8;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #000000;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+}
+
+.nav-link{
+  font-size:20.8px;
+}

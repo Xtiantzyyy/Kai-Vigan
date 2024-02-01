@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kai-Vigan: Gallery </title>
+        <link rel="stylesheet" href="gallery.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    </head>
+    <body>
+        <nav>
+            <div class="kaivigan">
+                <a href="index.html"><img src="images/logo2.png"></a>
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="discovery.html">DISCOVERY</a></li>
+                <li><a href="tripguide.html">TRIP GUIDES</a></li>
+                <li><a href="settlement.html">ESTABLISHMENTS</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </span>
+            </ul>
+        </nav>
+    <script src="navbar.js"></script>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+                <div class="slide first">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/6.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/7.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/5a.jpg" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                    <div class="auto-btn7"></div>
+                    <div class="auto-btn8"></div> 
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+                <label for="radio7" class="manual-btn"></label>
+                <label for="radio8" class="manual-btn"></label>
+            </div>
+        </div>
+        <div class="gal">
+            <div class="container1">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+            </div>
+            <div class="container2">
+                <div class="box5"></div>
+                <div class="box6"></div>
+                <div class="box7"></div>
+                <div class="box8"></div>
+            </div>
+            <div class="container3">
+                <div class="box9"></div>
+                <div class="box10"></div>
+                <div class="box11"></div>
+                <div class="box12"></div>
+            </div>
+            <div class="container4">
+                <div class="box13"></div>
+                <div class="box14"></div>
+                <div class="box15"></div>
+                <div class="box16"></div>
+            </div>
+        </div>    
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 8){
+                    counter = 1;
+                }
+            },5000);
+        </script>
+    </body>
+</html>
